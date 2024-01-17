@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .modal-820 {
+        @apply absolute left-0 right-0 lmg:top-[109px] m-auto max-w-[820px] h-fit max-h-[1150px] pt-[70px] bg-[#2D2D2D] lmg:pt-[40px]
+    }
+    .modal-discount {
+        @apply absolute left-0 right-0 lmg:top-[109px] m-auto max-w-[1105px] h-fit max-h-[510px] bg-[#2D2D2D]
+    }
+    .modal-review {
+        @apply absolute left-0 right-0 lmg:top-[109px] m-auto w-full lmg:max-w-[580px] h-fit max-h-[1150px] pt-[70px] bg-[#F1F1F1] lmg:pt-[20px]
+    }
+    .form-input {
+        @apply tracking-[-0.03em] p-[16px] w-full h-fit placeholder:text-[#787878] text-[16px]/[20.08px] text-white bg-[#313131] border-[1px] border-[#E3E3E3] max-h-[52px] box-border
+    }
+    .error-label {
+        @apply flex justify-center items-center text-white text-[8px]/[8px] tracking-[-0.03em] w-fit h-fit px-[4px] py-[2px] rounded-[3px] bg-[#FF0000]
+    }
+
+}
+.error-input-element{
+    visibility: hidden;
+}
+
+.valid-input-element{
+    visibility: hidden;
+}
+
+.is-error .error-input-element{
+    visibility: visible;
+}
+.is-error input, .is-error textarea {
+    border-color: #FF0000;
+}
+
+.is-valid .valid-input-element{
+    visibility: visible;
+}
+
+.submit-btn:disabled{
+    background-color: #6C6C6C !important;
+}
+
+.modal-review-h{
+    height: calc(100vh - fit-content + 100px)
+}
+
+.modal-review .ReactModal__Overlay {
+	background-color: rgba(255, 255, 255, 0.632) !important;
+	z-index: 30;
+}
+/* .submit-btn{
+    position: relative;
+    z-index: 50;
+} */
+
+.PhoneInputCountry{
+    margin: 0 !important;
+}
+
+.PhoneInputInput{
+    outline: none;
+}
+
+.PhoneInputCountrySelect option{
+    color: black;
+}
+
+.PhoneInputInput{
+    @apply tracking-[-0.03em] p-[16px] w-full h-fit placeholder:text-[#787878] text-[16px]/[20.08px] text-white bg-[#313131] max-h-[50px] box-border
+}
+
+button:disabled{
+    background-color: #6c6c6c;
+}

@@ -1,0 +1,12 @@
+.catalogSwiper .swiper-slide {
+	max-width: 380px !important;
+}
+
+.catalogSwiper {
+	width: 100vw;
+}
+
+.catalogSwiper .swiper-wrapper {
+	padding-left: 400px !important;
+	width: fit-content;
+}

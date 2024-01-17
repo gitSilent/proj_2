@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: 'Mulish', sans-serif;
+	user-select: none;
+	/* z-index: 1; */
+}
+
+.no-copy {
+	pointer-events: none;
+}
+
+@layer components {
+	.prevSpan {
+		@apply block uppercase text-[#2D2D2D] tracking-[-0.03em]  xs:font-normal xs:leading-[20.8px] xs:text-[16px] md:leading-[48.6px] md:text-[20px] md:font-medium;
+	}
+	.titleSpan {
+		@apply block uppercase text-[#2D2D2D] tracking-[-0.03em] xs:font-semibold xs:leading-[33.6px] xs:text-[28px] md:leading-[69.6px] md:text-[58px] md:font-semibold;
+	}
+	.mainText {
+		@apply block text-[#6C6C6C] tracking-[-0.03em]  xs:font-normal xs:leading-[18.2px] xs:text-[14px] md:leading-[26px] md:text-[20px] md:font-normal;
+	}
+	.postSpan {
+		@apply block uppercase text-[#2D2D2D] tracking-[-0.03em]  xs:font-normal xs:leading-[20.8px] xs:text-[16px] md:leading-[25.1px] md:text-[20px] md:font-normal;
+	}
+	.productSpan {
+		@apply block uppercase text-[#6C6C6C] tracking-[-0.03em]  text-[12px]/[15.6px] font-semibold;
+	}
+	.productTitle {
+		@apply block uppercase text-[#2D2D2D] tracking-[-0.03em]  font-semibold xs:text-[28px]/[33.6px] md:text-[36px]/[43.2px];
+	}
+	.specText {
+		@apply block font-medium text-[#2D2D2D] tracking-[-0.03em]  text-[16px]/[19.2px];
+	}
+	.paragraphText {
+		@apply block text-[14px]/[18.2px] font-normal text-[#6C6C6C] tracking-[-0.03em]  md:text-[20px]/[26px];
+	}
+}
+
+@layer reviews {
+	.review-card {
+		@apply min-w-[320px] max-w-[320px] h-[151px] lmg:min-w-[400px] lmg:max-w-[400px] lmg:h-[181px] bg-[#f1f1f1] pl-[10px] pt-[10px] pr-[20px] pb-[20px] lmg:pl-[20px] lmg:pt-[20px] lmg:pr-[25px] lmg:pb-[22px] relative overflow-hidden;
+	}
+
+	.big-review-card {
+		@apply min-w-[335px] max-w-[535px]  lg:max-w-[580px] bg-[#f1f1f1] pl-[10px] pt-[10px] pr-[20px] pb-[20px] lg:pl-[20px] lg:pt-[20px] lg:pr-[25px] lg:pb-[22px] relative overflow-hidden;
+	}
+}
+
+
+
+.mirror {
+	transform: scale(-1, 1);
+}
+
+.translate-y-50 {
+	transform: translateY(50px);
+}
+
+/* scroll styles */
+
+.hideScroll::-webkit-scrollbar {
+	display: none;
+}
+
+.hideScroll {
+	-ms-overflow-style: none !important; /* IE and Edge */
+	scrollbar-width: none !important; /* Firefox */
+}
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #bababa #dfe9eb;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+*::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:hover {
+	background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:active {
+	background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #bababa;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #9a9a9a;
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background-color: #919191;
+}
+
+@media screen and (max-width: 976px) {
+	*::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+/* scroll styles end*/
+
+.ReactModal__Overlay {
+	background-color: rgba(0, 0, 0, 0.75) !important;
+	z-index: 50;
+}
+
+/* modal global styles end */
+
+/* #preloader{ */
+/* background: red !important; */
+/* background-image: url("../../public/header/bg.webp"); */
+/* background: none; */
+/* } */
+
+/* TOASTIFY STYLES */
+
+.Toastify {
+	z-index: 99999999999 !important;
+}
+
+.Toastify__toast-container {
+	max-width: 375px !important;
+	width: 100% !important;
+	padding: 0 !important;
+	z-index: 99999999999 !important;
+}
+
+.Toastify__toast-body {
+	padding: 0 !important;
+}
+
+.Toastify__progress-bar {
+	height: 3px !important;
+	border-radius: 100px;
+}
+
+.Toastify__toast {
+	background-color: black !important;
+	padding: 15px !important;
+	max-width: 375px !important;
+	width: 100% !important;
+	min-height: 108px !important;
+	border-radius: 0 !important;
+	margin-bottom: 10px !important;
+}
+
+@media screen and (max-width: 480px) {
+	.Toastify__toast {
+		max-width: 100% !important;
+	}
+
+	.Toastify__toast-container {
+		max-width: 100% !important;
+	}
+
+	.Toastify__toast {
+		margin-bottom: 10px !important;
+	}
+}
+
+/* TOASTIFY STYLES END */
+
+
+/* FADE IN ANIMATIONS FOR BLOCK */
+
+.fade-in {
+	animation: fadeIn ease 4s;
+	-webkit-animation: fadeIn ease 4s;
+	-moz-animation: fadeIn ease 4s;
+	-o-animation: fadeIn ease 4s;
+	-ms-animation: fadeIn ease 4s;
+  }
+  
+  @keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+  }

@@ -1,0 +1,77 @@
+/* Slider.module.css */
+ .sliderContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .mySwiper .slider {
+    width: 100%;
+  }
+
+  .mySwiper{
+    height: 100% !important;
+  }
+
+  .mySwiper .swiper-pagination {
+    position: absolute;
+    bottom: 20px !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mySwiper .swiper-pagination-progress {
+    height: 4px; /* Высота прогресс-бара */
+    width: 0; /* Начальная ширина */
+    background-color: #3498db; /* Цвет прогресс-бара */
+    transition: width 5s linear; /* Анимация прогресса */
+  }
+
+  .mySwiper .swiper-pagination-bullet{
+    width: 15px !important;
+    height: 5px !important;
+    border-radius: 3px !important;
+    background-color: #8B8B8A !important;
+    transition-duration: 500ms;
+    opacity: 100;
+  }
+
+  .mySwiper .swiper-pagination-bullet .progress-div{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px !important;
+
+  }
+
+  .mySwiper .swiper-pagination-bullet-active .progress-div{
+    --progress: 0;
+    background-color: white !important;
+    width: var(--progress);
+  }
+
+  .mySwiper .swiper-pagination-bullet-active{
+    width: 30px !important;
+    background-color: #8B8B8A !important;
+
+  }
+
+
+
+  /* Добавьте стили для других элементов по вашему усмотрению */
+  
+  @layer arrows {
+    .prevArrow {
+      @apply hidden lmg:flex z-10 top-0 bottom-0 left-[20px] my-auto absolute justify-center items-center rounded-[56px] w-[56px] h-[56px] bg-[#2D2D2D4D]
+    }
+    .prevArrow:hover {
+      @apply bg-[#4444444d] cursor-pointer
+    }
+
+    .nextArrow {
+      @apply hidden lmg:flex z-10 top-0 bottom-0 right-[20px] my-auto absolute justify-center items-center rounded-[56px] w-[56px] h-[56px] bg-[#2D2D2D4D]
+    }
+    .nextArrow:hover {
+      @apply bg-[#4444444d] cursor-pointer
+    }
+  } 

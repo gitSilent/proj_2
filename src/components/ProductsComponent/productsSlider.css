@@ -1,0 +1,14 @@
+.productSwiper .swiper-pagination .swiper-pagination-bullet{
+    width: 10px;
+    height: 3px;
+    background-color: #FFFFFF;
+    opacity: 50%;
+    border-radius: 3px !important;
+}
+.productSwiper .swiper-pagination .swiper-pagination-bullet-active{
+    width: 10px;
+    height: 3px;
+    background-color: #FFFFFF;
+    opacity: 100%;
+    border-radius: 3px !important;
+}

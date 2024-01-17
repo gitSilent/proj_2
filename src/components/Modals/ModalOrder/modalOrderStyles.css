@@ -1,0 +1,30 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .modal-820 {
+        @apply absolute left-0 right-0 top-0 bottom-0 m-auto max-w-[820px] h-fit max-h-[1150px] pt-[70px] bg-[#2D2D2D] lmg:px-[40px] lmg:pt-[40px]
+        }
+    .form-input {
+        @apply tracking-[-0.03em] p-[16px] w-full h-fit placeholder:text-[#787878] text-[16px]/[20.08px] text-white bg-[#313131] border-[1px] border-[#E3E3E3]
+    }
+    .error-label {
+        @apply flex justify-center items-center text-white text-[8px]/[8px] tracking-[-0.03em] w-fit h-fit px-[4px] py-[2px] rounded-[3px] bg-[#FF0000]
+    }
+
+}
+.error-input-element{
+    visibility: hidden;
+}
+
+.is-error .error-input-element{
+    visibility: visible;
+}
+.is-error input, .is-error textarea {
+    border-color: #FF0000;
+} */
+
+/* .submit-btn:disabled{
+    background-color: #6C6C6C !important;
+} */

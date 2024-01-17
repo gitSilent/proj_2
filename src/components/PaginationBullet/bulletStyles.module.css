@@ -1,0 +1,14 @@
+/* styles/CustomPaginationBullet.module.css */
+.bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d3d3d3; /* Цвет неактивного буллета */
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .active {
+    background-color: #3498db; /* Цвет активного буллета */
+  }
